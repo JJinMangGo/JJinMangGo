@@ -1,12 +1,14 @@
 # 04. AI 에이전트 — 대답을 넘어 일을 처리하는 AI
 
-> **비개발자를 위한 AI 시스템 설계 입문서**  
+> **비개발자를 위한 AI 시스템 설계 입문서 · 04**  
 > 이번 장의 질문: **AI가 설명만 하는 것과 실제로 일을 끝내는 것은 무엇이 다를까?**
->
-> - 난이도: ★★☆☆☆ (코드 없이 원리를 이해할 수 있음)
-> - 예상 학습 시간: 25~35분
-> - 먼저 읽기: [03. RAG — AI가 자료를 찾아 답하는 방법](03_RAG_AI가_자료를_찾아_답하는_방법.md)
-> - 참고: [AI System Design Guide](https://github.com/ombharatiya/ai-system-design-guide)
+
+- 난이도: ★★☆☆☆ — 코드 없이 원리를 이해할 수 있음
+- 예상 학습 시간: 25~35분
+- 먼저 읽기: [03. RAG — AI가 모르는 자료를 찾아 답하는 방법](03_RAG_AI가_자료를_찾아_답하는_방법.md)
+- 참고 원문: [AI System Design Guide — Agent Fundamentals](https://github.com/ombharatiya/ai-system-design-guide/blob/main/07-agentic-systems/01-agent-fundamentals.md)
+
+> 이 글은 원문을 옮긴 번역본이 아니라, 원문의 핵심 개념을 초보자를 위해 새로 풀어 쓴 **독립 해설**이다. 서비스 사례는 개념 학습을 위한 설계 예시이며 실제 서비스의 구현 상태를 의미하지 않는다.
 
 ---
 
@@ -115,7 +117,7 @@ flowchart TD
 
 ### API와 에이전트는 같은 말일까?
 
-아니야.
+그렇지 않다.
 
 - **API:** 기능에 접근하는 통로. 예를 들어 데이터 조회나 AI 답변 생성 기능을 제공한다.
 - **에이전트:** 어떤 API나 도구를 **언제, 왜, 어떤 순서로** 사용할지 판단하는 전체 작업 시스템.
@@ -315,20 +317,17 @@ AI가 판단할 부분:
 >
 > 하지만 모든 일을 에이전트로 만들 필요는 없다. 정해진 단계는 코드로, 상황 판단은 AI로, 중요한 확정은 사람에게 남기는 것이 좋은 출발점이다.
 
-### 다음 장 예고
-
-**05. AI 서비스의 품질을 평가하는 방법 — 답변이 그럴듯한 것과 정확한 것은 다르다.**
-
-AI가 잘못된 답을 자신 있게 말하거나, 프롬프트를 조금 바꿨는데 결과가 달라지는 문제를 실제 테스트로 확인하는 방법을 배운다.
-
 ---
 
-## 더 읽을 자료
+## 다음 장 예고
+
+**[05. AI 서비스의 품질을 평가하는 방법](05_AI_서비스의_품질을_평가하는_방법.md)**  
+AI가 잘못된 답을 자신 있게 말하거나, 프롬프트를 조금 바꿨는데 결과가 달라지는 문제를 실제 테스트로 확인하는 방법을 배운다.
+
+## 참고 자료
 
 - [AI System Design Guide — 원본 저장소](https://github.com/ombharatiya/ai-system-design-guide)
 - [OpenAI — Building agents (공식 학습 자료)](https://developers.openai.com/tracks/building-agents)
 - [OpenAI — Orchestration and handoffs](https://developers.openai.com/api/docs/guides/agents/orchestration)
 - [OpenAI — A practical guide to building agents](https://openai.com/business/guides-and-resources/a-practical-guide-to-building-ai-agents/)
 - [Anthropic — Building effective agents](https://www.anthropic.com/research/building-effective-agents)
-
-**출처 및 구분:** 이 문서는 기술 개념을 검토해 비전공자용으로 새롭게 쓴 독립 해설입니다. 원본 저장소의 직역본이나 공식 번역본이 아닙니다. 서비스 사례는 개념 학습을 위한 설계 예시이며 실제 서비스의 구현 상태를 의미하지 않습니다.
